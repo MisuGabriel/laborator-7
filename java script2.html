@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Laborator 7</title>
+  <style>
+body {background-color: #ff6600;}
+
+h1{color:#00ff00;
+font-style:italic;
+font-size:36px;}
+
+p{color: #00ffff;}
+
+
+
+table,tr,td,ul{border:5px solid black ; }
+
+
+
+table,tr,td,ul{
+background-color: #cc99ff;
+color: white;
+  }
+
+img{ border:2px solid black  #ddd;
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  opacity: 0.5;
+  
+	   height:25% ;
+	   border-radius: 50%;
+	   padding: 5px;
+	   }
+</style>
+<script>
+function sss(){
+document.getElementById("nume").innerHTML= "Student Anul 1 ETTI Mîşu Daniel-Gabriel";
+document.body.style.backgroundColor= "red"
+
+document.getElementById("poza").src= "poza2.jpg";
+document.getElementById("poza").style.opacity="1.0"
+document.getElementById("poza").style.border="thick solid purple";
+
+var tabel1= document.getElementById("tabel").style.backgroundColor="blue";
+
+
+}
+function varsta(){
+var azi= new Date;
+var vsmea;
+var ann= document.getElementById("vs").innerHTML;
+var ancurent= azi.getFullYear();
+vsmea= ancurent-parseInt(ann);
+
+document.getElementById("vs").innerHTML= vsmea;
+}
+
+</script>
+
+  
+</head>
+
+
+<body >
+
+<h1 id="nume" align="left" >Mîşu Daniel-Gabriel</h1>
+<img id="poza"  src="poza.jpg">
+
+<p align="left"><b> e-mail:gabimisu61@yahoo.com</b> </p>
+<p align="left"><b> telefon:0760xxxxxx </b> </p>
+
+<p onmouseover= "varsta()" id="vs" >2001</p>
+
+<p align="left"><b><i> Aud și uit. Văd și îmi aduc aminte. Fac și înțeleg </i></b> </p>
+
+<button onclick="sss()"> Alta Viata </button>
+
+<h1> Materii Preferate</h1>
+<table id="tabel" style="width:100%">
+ 
+
+<tr>
+<td> Informatica Aplicata </td>
+<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3106.pdf">Link</a></td>
+</tr> 
+<tr>
+<td> Algebra liniara </td>
+<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3102.pdf">Link</a></td>
+</tr> 
+<tr>
+<td> Elemente de fizică</td>
+<td><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3103.pdf">Link</a></td>
+</tr> 
+</table>
+
+<h1> Pasiuni</h1>
+ <ul>
+<li>Sportul</li>
+<li>Gatitul</li>
+<li> Voluntariat</li>
+
+</ul>
+
+ 
+
+</body>
+</html>
+
